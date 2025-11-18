@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/web_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="7dp"
+        android:text="Web Url : "
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Enter URL "
+        app:layout_constraintBaseline_toBaselineOf="@id/web_url"
+        app:layout_constraintStart_toEndOf="@id/web_url"
+         />
+
+    <Button
+        android:id="@+id/browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Browse"
+        app:layout_constraintBaseline_toBaselineOf="@id/url"
+        app:layout_constraintStart_toEndOf="@id/url"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/phone_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="@dimen/margin"
+        android:text="Phone no. :"
+        android:textSize="15sp"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/web_url" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Enter phone no."
+        app:layout_constraintStart_toStartOf="@id/url"
+        app:layout_constraintBaseline_toBaselineOf="@id/phone_no"
+        app:layout_constraintStart_toEndOf="@id/phone_no" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:paddingHorizontal="25dp"
+        app:layout_constraintStart_toStartOf="@id/browse"
+        app:layout_constraintEnd_toEndOf="@id/browse"
+        app:layout_constraintBaseline_toBaselineOf="@id/number"
+        app:layout_constraintStart_toEndOf="@id/number" />
+
+    <TextView
+        android:id="@+id/call_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+
+        android:layout_marginTop="@dimen/margin"
+        android:padding="10dp"
+        android:text="Call log :"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_no" />
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="35dp"
+        android:text="Log"
+        app:layout_constraintStart_toStartOf="@id/browse"
+        app:layout_constraintEnd_toEndOf="@id/browse"
+        app:layout_constraintBaseline_toBaselineOf="@id/call_log"
+        app:layout_constraintStart_toEndOf="@+id/call_log" />
+
+    <TextView
+        android:id="@+id/gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="@dimen/margin"
+        android:text="Gallery :"
+        android:textSize="15sp"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/call_log" />
+
+    <Button
+        android:id="@+id/but_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        app:layout_constraintBaseline_toBaselineOf="@id/gallery"
+        app:layout_constraintStart_toStartOf="@id/browse"
+        app:layout_constraintEnd_toEndOf="@id/browse"
+        />
+
+    <TextView
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="@dimen/margin"
+        android:padding="10dp"
+        android:text="Camera"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gallery" />
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        app:layout_constraintBaseline_toBaselineOf="@id/camera"
+        app:layout_constraintEnd_toEndOf="@id/browse"
+        app:layout_constraintStart_toStartOf="@+id/browse" />
+
+    <TextView
+        android:id="@+id/alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="@dimen/margin"
+        android:padding="10dp"
+        android:text="Alarm :"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/camera" />
+
+    <Button
+        android:id="@+id/btn_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm"
+        app:layout_constraintBaseline_toBaselineOf="@id/alarm"
+        app:layout_constraintEnd_toEndOf="@id/browse"
+        app:layout_constraintStart_toStartOf="@id/browse" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="@dimen/margin"
+        android:padding="10dp"
+        android:text="Login"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alarm" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:layout_constraintBaseline_toBaselineOf="@id/login"
+        app:layout_constraintEnd_toEndOf="@id/browse"
+        app:layout_constraintStart_toStartOf="@id/browse" />
+
+    <TextView
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music :"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/margin"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="@id/login"
+        app:layout_constraintTop_toBottomOf="@id/login"/>
+
+    <Button
+        android:id="@+id/play_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="PlayMusic"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/music"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

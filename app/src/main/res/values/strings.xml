@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MAD_practical_3</string>
+    <string name="username">Email Id </string>
+    <string name="pass_login">Password </string>
+    <string name="fp_login">Forgot Password?</string>
+    <string name="btn_login">Login</string>
+    <string name="img">guni_pink_logo</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="user_fn">User Full Name </string>
+    <string name="phone">Phone Number </string>
+    <string name="city">City </string>
+    <string name="email">Email </string>
+    <string name="pass">Password </string>
+    <string name="confirm_pass">Confirm Password </string>
+    <string name="btn_register">Register</string>
+</resources>
